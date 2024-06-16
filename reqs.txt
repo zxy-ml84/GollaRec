@@ -1,0 +1,15 @@
+transformers
+torchmetrics
+tensorboardX
+datasets
+torchscale
+sentencepiece
+huggingface_hub
+opencv-python==4.5.5.64
+protobuf==3.20.3
+lmdb
+scipy
+ftfy
+einops
+matplotlib
+ujson
