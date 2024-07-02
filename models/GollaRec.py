@@ -9,9 +9,9 @@ import torch.nn.functional as F
 from common.abstract_recommender import MultiModalEndtoEndRecommender
 
 
-class AdapterSoup(MultiModalEndtoEndRecommender):
+class GollaRec(MultiModalEndtoEndRecommender):
     def __init__(self, config, dataset):
-        super(AdapterSoup, self).__init__(config, dataset, pretrained_path=None, use_soup=False)
+        super(GollaRec, self).__init__(config, dataset, pretrained_path=None, use_soup=False)
         self.config = config
         self.item_embeddings = None
         self.user_embeddings = None
