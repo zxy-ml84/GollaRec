@@ -17,7 +17,7 @@ os.environ['NUMEXPR_MAX_THREADS'] = '48'
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', '-m', type=str, default='UGNN_ete', help='name of models')
+    parser.add_argument('--model', '-m', type=str, default='GolllaRec', help='name of models')
     parser.add_argument('--dataset', '-d', type=str, default='baby', help='name of datasets')
     # parser.add_argument('--image_size', type=int, default=224, help='image size')
     # parser.add_argument('--multi_modal_encoder', type=str, default='vlmo',  help='multi-modal encoder')
@@ -31,7 +31,7 @@ if __name__ == '__main__':
         'gpu_id': 1,
         'image_size': 224,
         'input_size': 224,
-        'multi_modal_encoder': 'beit3_base_patch16_224',
+        'multi_modal_encoder': 'clip_vit32_patch16_224',
         'json_path': 'data/Amazon_Baby_Dataset/raw_text.json',
         'image_root': 'data/Amazon_Baby_Dataset/raw_image_id',
         'whole_word_masking': True,
@@ -44,7 +44,7 @@ if __name__ == '__main__':
         'pin_mem': False,
         'dist_eval': False,
         'vocab_size': 64010,
-        'finetune': '../ckpt/beit3/beit3_base_itc_patch16_224.pth',
+        'finetune': '../ckpt/llava/llava_base_itc_patch16_224.pth',
         'model_key': 'model|module',
         'model_prefix': '',
         'encoder_batch_size': 64,
@@ -61,6 +61,6 @@ if __name__ == '__main__':
 
 
 
-    quick_start(model=args.model, dataset=args.dataset, config_dict=config_dict, save_model=True)
-
+quick_start(model=args.model, dataset=args.dataset, config_dict=config_dict,
+                save_model=True, model_paths=args.model_paths)
 
