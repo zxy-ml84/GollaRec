@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 # @Time   : 2021/05/17
-# @Author : Zhou xin
-# @Email  : enoche.chow@gmail.com
 
 r"""
 ################################################
