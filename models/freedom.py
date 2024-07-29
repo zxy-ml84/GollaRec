@@ -1,5 +1,4 @@
 # coding: utf-8
-# @email: enoche.chow@gmail.com
 r"""
 FREEDOM: A Tale of Two Graphs: Freezing and Denoising Graph Structures for Multimodal Recommendation
 # Update: 01/08/2022
