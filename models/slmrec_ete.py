@@ -1,6 +1,5 @@
 # coding: utf-8
 #
-# Updated by enoche
 # Paper: Self-supervised Learning for Multimedia Recommendation
 # Github: https://github.com/zltao/SLMRec
 #
